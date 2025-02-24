@@ -11,8 +11,25 @@ const FullWidthTabs: React.FC = () => {
   ];
 
   const tabContents = [
-    <Text key={0} className="text-center mt-4">
-      Content for Tab 1
+    <div key={0} className="text-center mt-4">
+      <button
+        className="bg-blue-500 text-white px-4 py-2 rounded mr-2"
+        onClick={() => openImageDialog("image1.jpg")}
+      >
+        Open Image 1
+      </button>
+      <button
+        className="bg-green-500 text-white px-4 py-2 rounded"
+        onClick={() => openImageDialog("image2.jpg")}
+      >
+        Open Image 2
+      </button>
+    </div>,
+    <Text key={1} className="text-center mt-4">
+      Content for Tab 2
+    </Text>,
+    <Text key={2} className="text-center mt-4">
+      Content for Tab 3
     </Text>,
     <Text key={1} className="text-center mt-4">
       Content for Tab 2
